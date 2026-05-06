@@ -58,11 +58,26 @@
                    I build structured, secure, and performance-driven systems that support real-world business needs.
                 </p>
                 <div class="connect">
-                    <a href="https://facebook.com/vaishy.babu" target="_blank" rel="noopener noreferrer"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.instagram.com/vaishnaababakaran" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://www.linkedin.com/in/vaishnaa-babakaran" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://facebook.com/vaishy.babu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onclick="gtag('event','facebook_click');">
+                    <a href="https://www.instagram.com/vaishnaababakaran"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onclick="gtag('event','instagram_click');">
+                    <a href="https://www.linkedin.com/in/vaishnaa-babakaran"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onclick="gtag('event','linkedin_click');">
                 </div>
-                <a href="assets/BVaishnaa-CV.pdf" class="button" target="_blank" rel="noopener">Download CV</a>
+                   <a href="assets/BVaishnaa-CV.pdf"
+                   class="button"
+                   target="_blank"
+                   rel="noopener"
+                   onclick="gtag('event','cv_download');">
+                   Download CV
+                   </a>
                 
 
             </div>
@@ -253,7 +268,10 @@
             </p>
 
             <div class="project-links">
-                <a href="https://github.com/Rivindu13/TuneHub.git">GitHub</a>
+                <a href="https://github.com/Rivindu13/TuneHub.git"
+                onclick="gtag('event','band_project_click');">
+                GitHub
+                </a>
             </div>
             <button class="read-more">Read More</button>
            </div>
@@ -278,7 +296,10 @@
             </p>
 
             <div class="project-links">
-             <a href="#">GitHub</a>
+             <a href="#"
+             onclick="gtag('event','harmonyai_project_click');">
+             GitHub
+             </a>
             </div>
 
             <button class="read-more">Read More</button>
@@ -380,7 +401,8 @@
         <section class="contact" id="contact">
           <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form id="contactForm">
+        <form id="contactForm"
+        onsubmit="gtag('event','contact_form_submit');">
          <input type="text"  placeholder="Your Name" required>
          <input type="email" placeholder="Your Email" required>
          <textarea placeholder="Your Message" required rows="6"></textarea>
